@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "54f26d12-e250-4c52-84cc-532392e5f7b1",
+		"name": "EmailScheduler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"email\": \"airiddha@tagmango.com\",\r\n        \"time\": \"Mar 13 2022 11:04:05 GMT+0530\",\r\n        \"subject\": \"test email ${your name}\",\r\n        \"body\": \"hey this is test email\"\r\n    },\r\n    {\r\n        \"email\": \"airiddha@tagmango.com\",\r\n        \"time\": \"Mar 13 2022 11:04:10 GMT+0530\",\r\n        \"subject\": \"1 hour later test email ${your name}\",\r\n        \"body\": \"hey this is test email\"\r\n    },\r\n    {\r\n        \"email\": \"airiddha@tagmango.com\",\r\n        \"time\": \"Mar 13 2022 11:04:15 GMT+0530\",\r\n        \"subject\": \"particular time test email\",\r\n        \"body\": \"hey this is test email\"\r\n    },\r\n    {\r\n        \"email\": \"debe@tagmango.com\",\r\n        \"time\": \"Mar 13 2022 11:04:20 GMT+0530\",\r\n        \"subject\": \"test1 email ${your name}\",\r\n        \"body\": \"hey this is test email\"\r\n    },\r\n    {\r\n        \"email\": \"debadree@tagmango.com\",\r\n        \"time\": \"Mar 13 2022 11:04:25 GMT+0530\",\r\n        \"subject\": \"11 hour later test email ${your name}\",\r\n        \"body\": \"hey this is test email\"\r\n    },\r\n    {\r\n        \"email\": \"debadree@tagmango.com\",\r\n        \"time\": \"Mar 13 2022 11:04:30 GMT+0530\",\r\n        \"subject\": \"particular time test email ${your name}\",\r\n        \"body\": \"hey this is test email\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/email",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
